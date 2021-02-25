@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--image_path", type=str, default="kitten_small.jpg")
 parser.add_argument("--ip_address", type=str, default="3.236.97.79")
 parser.add_argument("--port", type=str, default="8080")
-parser.add_argument("--model_name", type=str, default="alexnet", help="1. alexnet, 2. densenet161")
+parser.add_argument("--model_name", type=str, default="densenet161", help="1. alexnet, 2. densenet161")
 args = parser.parse_args()
 
 if args.image_path.split(".")[-1] == "jpg":
